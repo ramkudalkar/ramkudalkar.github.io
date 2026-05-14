@@ -93,7 +93,7 @@ export default function Projects() {
               <div className="col-span-2">
                 <p className="text-neutral-500 text-sm mb-1">Contact</p>
                 <a href="mailto:ramchandrakudalkar27@gmail.com" className="text-blue-400 font-medium hover:text-blue-300 transition-colors">
-                  ramchandrakudalkar27@gmail.com
+                  ramchandrakudalkar6@gmail.com
                 </a>
               </div>
             </div>
