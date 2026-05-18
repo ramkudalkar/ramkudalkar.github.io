@@ -79,7 +79,7 @@ export default function Projects() {
               AWS DevOps Engineer
             </h2>
             <p className="text-neutral-400 leading-relaxed mb-6 text-lg">
-              Over three years of experience optimizing performance, enhancing security, and supporting scalable systems using AWS best practices. I thrive in dynamic environments where I can apply my skills in automation, CI/CD, and infrastructure design to solve complex challenges.
+              Over four years of experience optimizing performance, enhancing security, and supporting scalable systems using AWS best practices. I thrive in dynamic environments where I can apply my skills in automation, CI/CD, and infrastructure design to solve complex challenges.
             </p>
             
             <div className="grid grid-cols-2 gap-6 mt-8">
@@ -246,7 +246,7 @@ export default function Projects() {
               <div className="relative">
                 <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
                 <h4 className="text-2xl font-bold text-white">AWS DevOps Engineer</h4>
-                <p className="text-emerald-400 font-medium my-1">2023 - Present</p>
+                <p className="text-emerald-400 font-medium my-1">2022 - Present</p>
                 <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
                   <li>Continuously monitor network and system performance to identify and respond to issues, ensuring minimal disruption.</li>
                   <li>Diagnose and resolve technical problems related to network infrastructure and cloud automation.</li>
