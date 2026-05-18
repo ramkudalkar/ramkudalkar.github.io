@@ -66,7 +66,7 @@ export default function Projects() {
       
       <div className="max-w-7xl mx-auto relative z-10 space-y-32">
         
-        {/* About & Expertise */}
+        {/* About & Expertise Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <motion.div 
             initial={{ opacity: 0, y: 50 }}
@@ -104,6 +104,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
+          </motion.div>
 
           {/* Skills Progress */}
           <motion.div 
