@@ -211,38 +211,47 @@ export default function Projects() {
              transition={{ duration: 0.8 }}
              className="relative"
           >
-            {/* Experience Timeline */}
-             <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Career</h3>
-             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-                Professional Experience
-             </h2>
-             
-             <div className="relative pl-8 border-l border-white/10 space-y-12">
-               <div className="relative">
-                 <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
-                 <h4 className="text-2xl font-bold text-white">AWS DevOps Engineer</h4>
-                 <p className="text-emerald-400 font-medium my-1">2022 - Present</p>
-                 <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
-                   <li>Continuously monitor network and system performance to identify and respond to issues, ensuring minimal disruption.</li>
-                   <li>Diagnose and resolve technical problems related to network infrastructure and cloud automation.</li>
-                   <li>Perform routine maintenance tasks, software updates, patches, and backups.</li>
-                   <li>Manage concurrent deployments and tasks elegantly under pressure.</li>
-                 </ul>
-               </div>
+      {/* Experience Timeline */}
+<h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Career</h3>
+<h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
+  Professional Experience
+</h2>
 
-               <div className="relative">
-                 <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
-                 <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
-                 <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
-                 <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
-                   Developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to automate operations for educational institutions.
-                 </p>
-               </div>
-             </div>
-          </motion.div>
-        </div>
+<div className="relative pl-8 border-l border-white/10 space-y-12">
+  {/* AWS DevOps Engineer */}
+  <div className="relative">
+    <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
+    <h4 className="text-2xl font-bold text-white">AWS DevOps Engineer</h4>
+    <p className="text-emerald-400 font-medium my-1">2023 - Present</p>
+    <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
+      <li>Continuously monitor network and system performance to identify and respond to issues, ensuring minimal disruption.</li>
+      <li>Diagnose and resolve technical problems related to network infrastructure and cloud automation.</li>
+      <li>Perform routine maintenance tasks, software updates, patches, and backups.</li>
+      <li>Manage concurrent deployments and tasks elegantly under pressure.</li>
+    </ul>
+  </div>
 
-      </div>
-    </section>
-  );
-}
+  {/* Technical Support Engineer */}
+  <div className="relative">
+    <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600 hover:border-emerald-400 transition-colors" />
+    <h4 className="text-2xl font-bold text-white">Technical Support Engineer</h4>
+    <p className="text-neutral-500 font-medium my-1">2019 - 2021</p>
+    <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
+      <li>Continuously monitor network, systems, and core infrastructure to proactively identify and respond to issues, outages, or anomalies.</li>
+      <li>Diagnose and troubleshoot technical bugs across infrastructure, production servers, and connected applications to rapidly restore services.</li>
+      <li>Perform routine systems maintenance, including executing critical software updates, security patches, and backup schedules.</li>
+      <li>Developed and maintained production databases using MySQL while keeping precise systems records and documentation.</li>
+      <li>Successfully managed multiple high-priority tasks and concurrent incidents while under pressure.</li>
+    </ul>
+  </div>
+
+  {/* Bachelor's Degree */}
+  <div className="relative">
+    <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
+    <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
+    <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
+    <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
+      Developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to automate operations for educational institutions.
+    </p>
+  </div>
+</div>
