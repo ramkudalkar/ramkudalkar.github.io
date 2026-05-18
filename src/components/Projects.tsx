@@ -74,7 +74,7 @@ export default function Projects() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">About Me</h3>
+            <h3 class="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">About Me</h3>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
               AWS DevOps Engineer
             </h2>
@@ -82,7 +82,7 @@ export default function Projects() {
               Over four years of experience optimizing performance, enhancing security, and supporting scalable systems using AWS best practices. I thrive in dynamic environments where I can apply my skills in automation, CI/CD, and infrastructure design to solve complex challenges.
             </p>
             
-            <div className="grid grid-cols-2 gap-6 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
               <div>
                 <p className="text-neutral-500 text-sm mb-1">Location</p>
                 <p className="text-white font-medium">Mumbai / Pune</p>
@@ -91,11 +91,12 @@ export default function Projects() {
                 <p className="text-neutral-500 text-sm mb-1">Education</p>
                 <p className="text-white font-medium">B.Sc. Computer Science</p>
               </div>
-              <div>
+              <div className="sm:col-span-2">
                 <p className="text-neutral-500 text-sm mb-1">Contact</p>
                 <a href="mailto:ramchandrakudalkar6@gmail.com" className="text-blue-400 font-medium hover:text-blue-300 transition-colors">
                   ramchandrakudalkar6@gmail.com
                 </a>
+              </div>
             </div>
           </motion.div>
 
@@ -257,7 +258,7 @@ export default function Projects() {
               <div className="relative">
                 <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
                 <h4 className="text-2xl font-bold text-white">MBA in Artificial Intelligence</h4>
-                <p className="text-emerald-400 font-medium my-1">2023 - 2025 • Pune University</p>
+                <p className="text-emerald-400 font-medium My-1">2023 - 2025 • Pune University</p>
                 <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
                   Focused on intersectional expertise in advanced data analytics, machine learning strategies, and tech scalability. 
                   Spearheaded the development of a Tourism Management System leveraging Python, HTML, CSS, JavaScript, and SQL; 
@@ -270,7 +271,7 @@ export default function Projects() {
               <div className="relative">
                 <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
                 <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
-                <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
+                <p className="text-neutral-500 font-medium My-1">2017 - 2019 • Model College of Science</p>
                 <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
                   Gained core fundamentals in software engineering, database management systems (DBMS), data structures, and computer networks. 
                   Designed and developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to eliminate 
