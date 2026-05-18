@@ -81,6 +81,7 @@ export default function Projects() {
             <p className="text-neutral-400 leading-relaxed mb-6 text-lg">
               Over three years of experience optimizing performance, enhancing security, and supporting scalable systems using AWS best practices. I thrive in dynamic environments where I can apply my skills in automation, CI/CD, and infrastructure design to solve complex challenges.
             </p>
+            
             <div className="grid grid-cols-2 gap-6 mt-8">
               <div>
                 <p className="text-neutral-500 text-sm mb-1">Location</p>
@@ -102,6 +103,25 @@ export default function Projects() {
                   ramchandrakudalkar.in
                 </a>
               </div>
+            </div>
+
+            {/* Resume Download Button */}
+            <div className="mt-10">
+              <a 
+                href="/resume.pdf" 
+                download="Ramchandra_Kudalkar_Resume.pdf"
+                className="inline-flex items-center gap-3 px-6 py-3.5 bg-gradient-to-r from-emerald-500 to-blue-600 text-white font-semibold rounded-xl shadow-lg shadow-emerald-500/10 hover:shadow-emerald-500/20 hover:scale-[1.02] transition-all group"
+              >
+                <span>Download Resume</span>
+                <svg 
+                  className="w-5 h-5 text-white/80 group-hover:text-white group-hover:translate-y-0.5 transition-all" 
+                  fill="none" 
+                  viewBox="0 0 24 24" 
+                  stroke="currentColor"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                </svg>
+              </a>
             </div>
           </motion.div>
 
@@ -252,36 +272,42 @@ export default function Projects() {
           </div>
 
           {/* Education Column */}
-<div>
-  <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Learning</h3>
-  <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-    Education
-  </h2>
+          <div>
+            <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Learning</h3>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
+              Education
+            </h2>
 
-  <div className="relative pl-8 border-l border-white/10 space-y-12">
-    {/* MBA in Artificial Intelligence */}
-    <div className="relative">
-      <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
-      <h4 className="text-2xl font-bold text-white">MBA in Artificial Intelligence</h4>
-      <p className="text-emerald-400 font-medium my-1">2023 - 2025 • Pune University</p>
-      <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
-        Focused on intersectional expertise in advanced data analytics, machine learning strategies, and tech scalability. 
-        Spearheaded the development of a Tourism Management System leveraging Python, HTML, CSS, JavaScript, and SQL; 
-        integrated predictive logic for dynamic scheduling, customer demand forecasting, and automated backend operations 
-        to maximize resource allocation.
-      </p>
-    </div>
+            <div className="relative pl-8 border-l border-white/10 space-y-12">
+              {/* MBA in Artificial Intelligence */}
+              <div className="relative">
+                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
+                <h4 className="text-2xl font-bold text-white">MBA in Artificial Intelligence</h4>
+                <p className="text-emerald-400 font-medium my-1">2023 - 2025 • Pune University</p>
+                <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
+                  Focused on intersectional expertise in advanced data analytics, machine learning strategies, and tech scalability. 
+                  Spearheaded the development of a Tourism Management System leveraging Python, HTML, CSS, JavaScript, and SQL; 
+                  integrated predictive logic for dynamic scheduling, customer demand forecasting, and automated backend operations 
+                  to maximize resource allocation.
+                </p>
+              </div>
 
-    {/* Bachelor's Degree */}
-    <div className="relative">
-      <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
-      <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
-      <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
-      <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
-        Gained core fundamentals in software engineering, database management systems (DBMS), data structures, and computer networks. 
-        Designed and developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to eliminate 
-        manual processing, optimizing query delivery and database normalization for educational institutions.
-      </p>
-    </div>
-  </div>
-</div>
+              {/* Bachelor's Degree */}
+              <div className="relative">
+                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
+                <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
+                <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
+                <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
+                  Gained core fundamentals in software engineering, database management systems (DBMS), data structures, and computer networks. 
+                  Designed and developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to eliminate 
+                  manual processing, optimizing query delivery and database normalization for educational institutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+      </div>
+    </section>
+  );
+}
