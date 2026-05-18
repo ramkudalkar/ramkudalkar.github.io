@@ -252,37 +252,36 @@ export default function Projects() {
           </div>
 
           {/* Education Column */}
-          <div>
-            <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Learning</h3>
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-              Education
-            </h2>
+<div>
+  <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Learning</h3>
+  <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
+    Education
+  </h2>
 
-            <div className="relative pl-8 border-l border-white/10 space-y-12">
-              {/* MBA in Artificial Intelligence */}
-              <div className="relative">
-                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
-                <h4 className="text-2xl font-bold text-white">MBA in Artificial Intelligence</h4>
-                <p className="text-emerald-400 font-medium my-1">2023 - 2025 • Pune University</p>
-                <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
-                  Developed a Tourism Management System leveraging Python, HTML, CSS, JavaScript, and SQL to automate booking, scheduling, and operations.
-                </p>
-              </div>
+  <div className="relative pl-8 border-l border-white/10 space-y-12">
+    {/* MBA in Artificial Intelligence */}
+    <div className="relative">
+      <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
+      <h4 className="text-2xl font-bold text-white">MBA in Artificial Intelligence</h4>
+      <p className="text-emerald-400 font-medium my-1">2023 - 2025 • Pune University</p>
+      <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
+        Focused on intersectional expertise in advanced data analytics, machine learning strategies, and tech scalability. 
+        Spearheaded the development of a Tourism Management System leveraging Python, HTML, CSS, JavaScript, and SQL; 
+        integrated predictive logic for dynamic scheduling, customer demand forecasting, and automated backend operations 
+        to maximize resource allocation.
+      </p>
+    </div>
 
-              {/* Bachelor's Degree */}
-              <div className="relative">
-                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
-                <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
-                <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
-                <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
-                  Developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to automate operations for educational institutions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
-
-      </div>
-    </section>
-  );
-}
+    {/* Bachelor's Degree */}
+    <div className="relative">
+      <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
+      <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
+      <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
+      <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
+        Gained core fundamentals in software engineering, database management systems (DBMS), data structures, and computer networks. 
+        Designed and developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to eliminate 
+        manual processing, optimizing query delivery and database normalization for educational institutions.
+      </p>
+    </div>
+  </div>
+</div>
