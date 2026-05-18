@@ -90,10 +90,16 @@ export default function Projects() {
                 <p className="text-neutral-500 text-sm mb-1">Education</p>
                 <p className="text-white font-medium">B.Sc. Computer Science</p>
               </div>
-              <div className="col-span-2">
+              <div>
                 <p className="text-neutral-500 text-sm mb-1">Contact</p>
-                <a href="mailto:ramchandrakudalkar27@gmail.com" className="text-blue-400 font-medium hover:text-blue-300 transition-colors">
+                <a href="mailto:ramchandrakudalkar6@gmail.com" className="text-blue-400 font-medium hover:text-blue-300 transition-colors">
                   ramchandrakudalkar6@gmail.com
+                </a>
+              </div>
+              <div>
+                <p className="text-neutral-500 text-sm mb-1">Website</p>
+                <a href="https://ramchandrakudalkar.in" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-medium hover:text-emerald-300 transition-colors">
+                  ramchandrakudalkar.in
                 </a>
               </div>
             </div>
