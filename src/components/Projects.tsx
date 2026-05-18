@@ -173,112 +173,116 @@ export default function Projects() {
           </div>
         </motion.div>
 
-        {/* Services & Experience */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-          <motion.div 
-             initial={{ opacity: 0, x: -50 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             viewport={{ once: true, margin: "-100px" }}
-             transition={{ duration: 0.8 }}
-          >
-             <h3 className="text-sm font-semibold tracking-widest text-purple-400 uppercase mb-4">What I Do</h3>
-             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-                Cloud Services
-             </h2>
-             <div className="space-y-8">
-               {services.map(service => (
-                 <div key={service.title} className="flex gap-4">
-                   <div className="mt-1">
-                     <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-blue-400">
-                       <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                       </svg>
-                     </div>
-                   </div>
-                   <div>
-                     <h4 className="text-xl font-semibold text-white mb-2">{service.title}</h4>
-                     <p className="text-neutral-400 leading-relaxed text-sm">{service.description}</p>
-                   </div>
-                 </div>
-               ))}
-             </div>
-          </motion.div>
+        {/* Services Showcase */}
+        <motion.div 
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="space-y-12"
+        >
+          <div>
+            <h3 className="text-sm font-semibold tracking-widest text-purple-400 uppercase mb-4">What I Do</h3>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
+              Cloud Services
+            </h2>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {services.map(service => (
+              <div key={service.title} className="flex gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5">
+                <div className="flex-shrink-0">
+                  <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-blue-400">
+                    <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h4 className="text-xl font-semibold text-white mb-2">{service.title}</h4>
+                  <p className="text-neutral-400 leading-relaxed text-sm">{service.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </motion.div>
 
-          <motion.div 
-             initial={{ opacity: 0, x: 50 }}
-             whileInView={{ opacity: 1, x: 0 }}
-             viewport={{ once: true, margin: "-100px" }}
-             transition={{ duration: 0.8 }}
-             className="relative"
-          >
-      {/* Experience & Education Grid */}
-<div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-  
-  {/* Professional Experience Column */}
-  <div>
-    <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Career</h3>
-    <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-      Experience
-    </h2>
+        {/* Experience & Education Timelines */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-100px" }}
+          transition={{ duration: 0.8 }}
+          className="grid grid-cols-1 lg:grid-cols-2 gap-16"
+        >
+          {/* Professional Experience Column */}
+          <div>
+            <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Career</h3>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
+              Experience
+            </h2>
 
-    <div className="relative pl-8 border-l border-white/10 space-y-12">
-      {/* AWS DevOps Engineer */}
-      <div className="relative">
-        <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
-        <h4 className="text-2xl font-bold text-white">AWS DevOps Engineer</h4>
-        <p className="text-emerald-400 font-medium my-1">2023 - Present</p>
-        <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
-          <li>Continuously monitor network and system performance to identify and respond to issues, ensuring minimal disruption.</li>
-          <li>Diagnose and resolve technical problems related to network infrastructure and cloud automation.</li>
-          <li>Perform routine maintenance tasks, software updates, patches, and backups.</li>
-          <li>Manage concurrent deployments and tasks elegantly under pressure.</li>
-        </ul>
+            <div className="relative pl-8 border-l border-white/10 space-y-12">
+              {/* AWS DevOps Engineer */}
+              <div className="relative">
+                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
+                <h4 className="text-2xl font-bold text-white">AWS DevOps Engineer</h4>
+                <p className="text-emerald-400 font-medium my-1">2023 - Present</p>
+                <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
+                  <li>Continuously monitor network and system performance to identify and respond to issues, ensuring minimal disruption.</li>
+                  <li>Diagnose and resolve technical problems related to network infrastructure and cloud automation.</li>
+                  <li>Perform routine maintenance tasks, software updates, patches, and backups.</li>
+                  <li>Manage concurrent deployments and tasks elegantly under pressure.</li>
+                </ul>
+              </div>
+
+              {/* Technical Support Engineer */}
+              <div className="relative">
+                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600 hover:border-emerald-400 transition-colors" />
+                <h4 className="text-2xl font-bold text-white">Technical Support Engineer</h4>
+                <p className="text-neutral-500 font-medium my-1">2019 - 2021</p>
+                <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
+                  <li>Continuously monitor network, systems, and core infrastructure to proactively identify and respond to issues, outages, or anomalies.</li>
+                  <li>Diagnose and troubleshoot technical bugs across infrastructure, production servers, and connected applications to rapidly restore services.</li>
+                  <li>Perform routine systems maintenance, including executing critical software updates, security patches, and backup schedules.</li>
+                  <li>Developed and maintained production databases using MySQL while keeping precise systems records and documentation.</li>
+                  <li>Successfully managed multiple high-priority tasks and concurrent incidents while under pressure.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Education Column */}
+          <div>
+            <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Learning</h3>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
+              Education
+            </h2>
+
+            <div className="relative pl-8 border-l border-white/10 space-y-12">
+              {/* MBA in Artificial Intelligence */}
+              <div className="relative">
+                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
+                <h4 className="text-2xl font-bold text-white">MBA in Artificial Intelligence</h4>
+                <p className="text-emerald-400 font-medium my-1">2023 - 2025 • Pune University</p>
+                <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
+                  Developed a Tourism Management System leveraging Python, HTML, CSS, JavaScript, and SQL to automate booking, scheduling, and operations.
+                </p>
+              </div>
+
+              {/* Bachelor's Degree */}
+              <div className="relative">
+                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
+                <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
+                <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
+                <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
+                  Developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to automate operations for educational institutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
       </div>
-
-      {/* Technical Support Engineer */}
-      <div className="relative">
-        <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600 hover:border-emerald-400 transition-colors" />
-        <h4 className="text-2xl font-bold text-white">Technical Support Engineer</h4>
-        <p className="text-neutral-500 font-medium my-1">2019 - 2021</p>
-        <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
-          <li>Continuously monitor network, systems, and core infrastructure to proactively identify and respond to issues, outages, or anomalies.</li>
-          <li>Diagnose and troubleshoot technical bugs across infrastructure, production servers, and connected applications to rapidly restore services.</li>
-          <li>Perform routine systems maintenance, including executing critical software updates, security patches, and backup schedules.</li>
-          <li>Developed and maintained production databases using MySQL while keeping precise systems records and documentation.</li>
-          <li>Successfully managed multiple high-priority tasks and concurrent incidents while under pressure.</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-
-  {/* Education Column */}
-  <div>
-    <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Learning</h3>
-    <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-      Education
-    </h2>
-
-    <div className="relative pl-8 border-l border-white/10 space-y-12">
-      {/* MBA in Artificial Intelligence */}
-      <div className="relative">
-        <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
-        <h4 className="text-2xl font-bold text-white">MBA in Artificial Intelligence</h4>
-        <p className="text-emerald-400 font-medium my-1">2023 - 2025 • Pune University</p>
-        <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
-          Developed a Tourism Management System leveraging Python, HTML, CSS, JavaScript, and SQL to automate booking, scheduling, and operations.
-        </p>
-      </div>
-
-      {/* Bachelor's Degree */}
-      <div className="relative">
-        <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
-        <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
-        <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
-        <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
-          Developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to automate operations for educational institutions.
-        </p>
-      </div>
-    </div>
-  </div>
-
-</div>
+    </section>
+  );
+}
