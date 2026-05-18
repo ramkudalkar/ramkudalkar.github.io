@@ -96,13 +96,6 @@ export default function Projects() {
                 <a href="mailto:ramchandrakudalkar6@gmail.com" className="text-blue-400 font-medium hover:text-blue-300 transition-colors">
                   ramchandrakudalkar6@gmail.com
                 </a>
-              </div>
-              <div>
-                <p className="text-neutral-500 text-sm mb-1">Website</p>
-                <a href="https://ramchandrakudalkar.in" target="_blank" rel="noopener noreferrer" className="text-emerald-400 font-medium hover:text-emerald-300 transition-colors">
-                  ramchandrakudalkar.in
-                </a>
-              </div>
             </div>
           </motion.div>
 
