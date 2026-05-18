@@ -74,7 +74,7 @@ export default function Projects() {
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
           >
-            <h3 class="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">About Me</h3>
+            <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">About Me</h3>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
               AWS DevOps Engineer
             </h2>
@@ -258,7 +258,7 @@ export default function Projects() {
               <div className="relative">
                 <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
                 <h4 className="text-2xl font-bold text-white">MBA in Artificial Intelligence</h4>
-                <p className="text-emerald-400 font-medium My-1">2023 - 2025 • Pune University</p>
+                <p className="text-emerald-400 font-medium my-1">2023 - 2025 • Pune University</p>
                 <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
                   Focused on intersectional expertise in advanced data analytics, machine learning strategies, and tech scalability. 
                   Spearheaded the development of a Tourism Management System leveraging Python, HTML, CSS, JavaScript, and SQL; 
@@ -271,7 +271,7 @@ export default function Projects() {
               <div className="relative">
                 <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
                 <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
-                <p className="text-neutral-500 font-medium My-1">2017 - 2019 • Model College of Science</p>
+                <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
                 <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
                   Gained core fundamentals in software engineering, database management systems (DBMS), data structures, and computer networks. 
                   Designed and developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to eliminate 
