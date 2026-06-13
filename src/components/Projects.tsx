@@ -3,12 +3,15 @@
 import { motion } from "framer-motion";
 
 const skills = [
-  { name: "AWS Cloud", value: 90 },
-  { name: "HTML/CSS", value: 85 },
-  { name: "Containerization", value: 80 },
-  { name: "Version Control", value: 55 },
-  { name: "SQL", value: 40 },
-  { name: "Python", value: 30 },
+  { name: "Python & ETL", value: 90 },
+  { name: "SQL & Query Optimization", value: 88 },
+  { name: "PySpark & Big Data", value: 85 },
+  { name: "Azure Data Factory (ADF)", value: 85 },
+  { name: "Snowflake Data Warehouse", value: 82 },
+  { name: "Azure Cloud", value: 80 },
+  { name: "Git & Version Control", value: 80 },
+  { name: "AWS Cloud", value: 75 },
+  { name: "Docker & Containerization", value: 72 },
 ];
 
 const certificates = [
@@ -40,20 +43,20 @@ const certificates = [
 
 const services = [
   {
-    title: "DevOps Automation",
-    description: "CodePipeline, CodeBuild, CodeDeploy, and CloudFormation for streamlined CI/CD.",
+    title: "ETL Pipeline Development",
+    description: "Designing scalable pipelines for extracting, transforming, and loading structured and unstructured data.",
   },
   {
-    title: "Security & Compliance",
-    description: "IAM, KMS, and Shield for managing access and ensuring robust infrastructure protection.",
+    title: "Cloud Data Warehousing",
+    description: "Architecting modern data warehouses using Snowflake, AWS Redshift, and Azure Synapse for high-performance analytics.",
   },
   {
-    title: "Databases & Storage",
-    description: "RDS, DynamoDB, Aurora, and Redshift tailored for high-performance and scalability.",
+    title: "Big Data Processing",
+    description: "Leveraging PySpark and distributed computing to process large-scale datasets with efficiency and speed.",
   },
   {
-    title: "Monitoring & Management",
-    description: "CloudWatch, CloudTrail, and Config for deep observability and system governance.",
+    title: "Workflow Orchestration",
+    description: "Automating complex data workflows using Azure Data Factory (ADF) and scheduling tools for seamless delivery.",
   }
 ];
 
@@ -76,20 +79,22 @@ export default function Projects() {
           >
             <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">About Me</h3>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
-              AWS DevOps Engineer
+              Data Engineer
             </h2>
             <p className="text-neutral-400 leading-relaxed mb-6 text-lg">
-              Over four years of experience optimizing performance, enhancing security, and supporting scalable systems using AWS best practices. I thrive in dynamic environments where I can apply my skills in automation, CI/CD, and infrastructure design to solve complex challenges.
+              Data Engineering professional with 4.2+ years of experience building robust, scalable data solutions. I specialize in designing high-performance ETL pipelines and modern data architectures using Python, PySpark, SQL, and Snowflake. 
+              <br /><br />
+              With deep expertise in Azure Data Factory (ADF) and cross-cloud environments (AWS & Azure), I transform raw, complex datasets into reliable data assets that drive business intelligence and advanced analytics.
             </p>
             
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-8 border-t border-white/5 pt-8">
               <div>
                 <p className="text-neutral-500 text-sm mb-1">Location</p>
                 <p className="text-white font-medium">Mumbai / Pune</p>
               </div>
               <div>
-                <p className="text-neutral-500 text-sm mb-1">Education</p>
-                <p className="text-white font-medium">B.Sc. Computer Science</p>
+                <p className="text-neutral-500 text-sm mb-1">Key Focus</p>
+                <p className="text-white font-medium">Cloud Data Architecture</p>
               </div>
               <div className="sm:col-span-2">
                 <p className="text-neutral-500 text-sm mb-1">Contact</p>
@@ -108,21 +113,21 @@ export default function Projects() {
             transition={{ duration: 0.8, delay: 0.2 }}
             className="rounded-3xl bg-white/5 border border-white/10 p-8 backdrop-blur-xl"
           >
-            <h3 className="text-2xl font-bold text-white mb-8">Technical Expertise</h3>
+            <h3 className="text-2xl font-bold text-white mb-8">Technical Proficiency</h3>
             <div className="space-y-6">
               {skills.map((skill) => (
                 <div key={skill.name}>
                   <div className="flex justify-between text-sm font-medium mb-2">
                     <span className="text-neutral-300">{skill.name}</span>
-                    <span className="text-blue-400">{skill.value}%</span>
+                    <span className="text-emerald-400">{skill.value}%</span>
                   </div>
-                  <div className="h-2 w-full bg-white/10 rounded-full overflow-hidden">
+                  <div className="h-1.5 w-full bg-white/10 rounded-full overflow-hidden">
                     <motion.div 
                       initial={{ width: 0 }}
                       whileInView={{ width: `${skill.value}%` }}
                       viewport={{ once: true }}
                       transition={{ duration: 1, delay: 0.5 }}
-                      className="h-full bg-gradient-to-r from-blue-500 to-emerald-400 rounded-full"
+                      className="h-full bg-gradient-to-r from-emerald-500 to-blue-500 rounded-full"
                     />
                   </div>
                 </div>
@@ -156,7 +161,7 @@ export default function Projects() {
                 className="group relative rounded-2xl bg-white/[0.03] border border-white/10 p-6 hover:bg-white/10 hover:border-white/20 transition-all cursor-default"
               >
                  <div className="h-full flex flex-col justify-between">
-                    <h4 className="text-lg font-semibold text-white mb-4 leading-snug group-hover:text-blue-400 transition-colors">
+                    <h4 className="text-lg font-semibold text-white mb-4 leading-snug group-hover:text-emerald-400 transition-colors">
                       {cert.title}
                     </h4>
                     <p className="text-sm text-neutral-500 font-medium tracking-wide">
@@ -177,18 +182,18 @@ export default function Projects() {
           className="space-y-12"
         >
           <div>
-            <h3 className="text-sm font-semibold tracking-widest text-purple-400 uppercase mb-4">What I Do</h3>
+            <h3 className="text-sm font-semibold tracking-widest text-blue-400 uppercase mb-4">Core Solutions</h3>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-              Cloud Services
+              Data Engineering Services
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {services.map(service => (
-              <div key={service.title} className="flex gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5">
+              <div key={service.title} className="flex gap-4 p-6 rounded-2xl bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] transition-colors">
                 <div className="flex-shrink-0">
-                  <div className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-blue-400">
+                  <div className="w-10 h-10 rounded-full bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                     </svg>
                   </div>
                 </div>
@@ -202,37 +207,34 @@ export default function Projects() {
         </motion.div>
 
         {/* Experience & Education Timelines */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
-          transition={{ duration: 0.8 }}
-          className="grid grid-cols-1 lg:grid-cols-2 gap-16"
-        >
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Professional Experience Column */}
-          <div>
-            <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Career</h3>
+          <motion.div
+            initial={{ opacity: 0, x: -50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Professional</h3>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
-              Experience
+              Work History
             </h2>
 
             <div className="relative pl-8 border-l border-white/10 space-y-12">
-  {/* Data Engineer */}
-  <div className="relative">
-    <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
-    <h4 className="text-2xl font-bold text-white">Data Engineer</h4>
-    <p className="text-emerald-400 font-medium my-1">March 2022 - Present</p>
-    <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
-      <li>Develop and maintain scalable ETL pipelines for extracting, transforming, and loading data from multiple sources.</li>
-      <li>Build data processing solutions using Python, PySpark, and SQL for large-scale data transformation.</li>
-      <li>Design and manage Azure Data Factory (ADF) workflows for data orchestration and automation.</li>
-      <li>Work with Snowflake for cloud data warehousing, data transformation, and query optimization.</li>
-      <li>Utilize AWS and Azure cloud platforms to manage and deploy data engineering solutions.</li>
-      <li>Implement Docker for containerization and Git for version control and team collaboration.</li>
-      <li>Perform data validation, troubleshooting, and performance optimization for reliable pipelines.</li>
-    </ul>
-  </div>
-</div>
+              {/* Data Engineer Role */}
+              <div className="relative">
+                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
+                <h4 className="text-2xl font-bold text-white">Data Engineer</h4>
+                <p className="text-emerald-400 font-medium my-1">March 2022 - Present</p>
+                <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
+                  <li>Design and develop scalable ETL/ELT pipelines for seamless data extraction and transformation from disparate sources.</li>
+                  <li>Build high-performance data processing solutions using Python and PySpark to handle multi-terabyte datasets.</li>
+                  <li>Optimize complex SQL queries and Snowflake warehouse structures to reduce latency and compute costs.</li>
+                  <li>Orchestrate data workflows using Azure Data Factory (ADF), managing triggers, dependencies, and monitoring.</li>
+                  <li>Architect data migration strategies moving legacy on-premise systems to Snowflake cloud environments.</li>
+                  <li>Ensure data integrity and reliability through automated validation, unit testing, and Docker-based deployments.</li>
+                </ul>
+              </div>
 
               {/* Technical Support Engineer */}
               <div className="relative">
@@ -240,51 +242,48 @@ export default function Projects() {
                 <h4 className="text-2xl font-bold text-white">Technical Support Engineer</h4>
                 <p className="text-neutral-500 font-medium my-1">2019 - 2021</p>
                 <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
-                  <li>Continuously monitor network, systems, and core infrastructure to proactively identify and respond to issues, outages, or anomalies.</li>
-                  <li>Diagnose and troubleshoot technical bugs across infrastructure, production servers, and connected applications to rapidly restore services.</li>
-                  <li>Perform routine systems maintenance, including executing critical software updates, security patches, and backup schedules.</li>
-                  <li>Developed and maintained production databases using MySQL while keeping precise systems records and documentation.</li>
-                  <li>Successfully managed multiple high-priority tasks and concurrent incidents while under pressure.</li>
+                  <li>Monitored network systems and infrastructure, ensuring 99.9% uptime and proactive incident response.</li>
+                  <li>Maintained and optimized relational databases using MySQL, performing routine backups and schema updates.</li>
+                  <li>Troubleshot technical bugs across server environments to restore critical business applications.</li>
+                  <li>Managed high-pressure production deployments and documented standard operating procedures (SOPs).</li>
                 </ul>
               </div>
             </div>
-          </div>
+          </motion.div>
 
           {/* Education Column */}
-          <div>
-            <h3 className="text-sm font-semibold tracking-widest text-emerald-400 uppercase mb-4">Learning</h3>
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h3 className="text-sm font-semibold tracking-widest text-blue-400 uppercase mb-4">Academic</h3>
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-10">
               Education
             </h2>
 
             <div className="relative pl-8 border-l border-white/10 space-y-12">
-              {/* MBA in Artificial Intelligence */}
               <div className="relative">
                 <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
                 <h4 className="text-2xl font-bold text-white">MBA in Artificial Intelligence</h4>
                 <p className="text-emerald-400 font-medium my-1">2023 - 2025 • Pune University</p>
                 <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
-                  Focused on intersectional expertise in advanced data analytics, machine learning strategies, and tech scalability. 
-                  Spearheaded the development of a Tourism Management System leveraging Python, HTML, CSS, JavaScript, and SQL; 
-                  integrated predictive logic for dynamic scheduling, customer demand forecasting, and automated backend operations 
-                  to maximize resource allocation.
+                  Focused on intersectional expertise in advanced data analytics, machine learning strategies, and big data architecture. Developed a Tourism Management System leveraging Python and SQL to automate backend scheduling and demand forecasting.
                 </p>
               </div>
 
-              {/* Bachelor's Degree */}
               <div className="relative">
                 <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-neutral-600" />
                 <h4 className="text-2xl font-bold text-white">Bachelor of Computer Science</h4>
                 <p className="text-neutral-500 font-medium my-1">2017 - 2019 • Model College of Science</p>
                 <p className="text-neutral-400 mt-4 text-sm leading-relaxed">
-                  Gained core fundamentals in software engineering, database management systems (DBMS), data structures, and computer networks. 
-                  Designed and developed an Attendance Management System leveraging Python, HTML, CSS, JavaScript, and SQL to eliminate 
-                  manual processing, optimizing query delivery and database normalization for educational institutions.
+                  Established a strong foundation in computer networking, data structures, and database management systems (DBMS). Developed an Attendance Management System optimizing relational data structures for educational facilities.
                 </p>
               </div>
             </div>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
 
       </div>
     </section>
