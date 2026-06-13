@@ -217,18 +217,22 @@ export default function Projects() {
             </h2>
 
             <div className="relative pl-8 border-l border-white/10 space-y-12">
-              {/* AWS DevOps Engineer */}
-              <div className="relative">
-                <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
-                <h4 className="text-2xl font-bold text-white">AWS DevOps Engineer</h4>
-                <p className="text-emerald-400 font-medium my-1">2022 - Present</p>
-                <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
-                  <li>Continuously monitor network and system performance to identify and respond to issues, ensuring minimal disruption.</li>
-                  <li>Diagnose and resolve technical problems related to network infrastructure and cloud automation.</li>
-                  <li>Perform routine maintenance tasks, software updates, patches, and backups.</li>
-                  <li>Manage concurrent deployments and tasks elegantly under pressure.</li>
-                </ul>
-              </div>
+  {/* Data Engineer */}
+  <div className="relative">
+    <div className="absolute -left-[41px] top-1 w-5 h-5 rounded-full bg-[#121212] border-2 border-emerald-400" />
+    <h4 className="text-2xl font-bold text-white">Data Engineer</h4>
+    <p className="text-emerald-400 font-medium my-1">March 2022 - Present</p>
+    <ul className="text-neutral-400 mt-4 space-y-3 text-sm leading-relaxed list-disc pl-4">
+      <li>Develop and maintain scalable ETL pipelines for extracting, transforming, and loading data from multiple sources.</li>
+      <li>Build data processing solutions using Python, PySpark, and SQL for large-scale data transformation.</li>
+      <li>Design and manage Azure Data Factory (ADF) workflows for data orchestration and automation.</li>
+      <li>Work with Snowflake for cloud data warehousing, data transformation, and query optimization.</li>
+      <li>Utilize AWS and Azure cloud platforms to manage and deploy data engineering solutions.</li>
+      <li>Implement Docker for containerization and Git for version control and team collaboration.</li>
+      <li>Perform data validation, troubleshooting, and performance optimization for reliable pipelines.</li>
+    </ul>
+  </div>
+</div>
 
               {/* Technical Support Engineer */}
               <div className="relative">
