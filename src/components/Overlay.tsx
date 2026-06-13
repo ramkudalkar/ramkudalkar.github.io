@@ -35,7 +35,7 @@ export default function Overlay({ containerRef }: { containerRef: RefObject<HTML
               Ramchandra<br />Kudalkar.
             </h1>
             <p className="text-xl md:text-3xl text-neutral-300 font-medium tracking-wide">
-              AWS DevOps Engineer.
+              Data Engineer.
             </p>
           </div>
         </motion.div>
@@ -46,7 +46,7 @@ export default function Overlay({ containerRef }: { containerRef: RefObject<HTML
           className="absolute inset-0 flex flex-col items-start justify-center px-8 md:px-[10%]"
         >
           <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight drop-shadow-xl max-w-3xl">
-            I architect <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-emerald-400">cloud infrastructure</span>.
+            I architect <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-blue-400">scalable data solutions</span>.
           </h2>
         </motion.div>
 
@@ -56,7 +56,7 @@ export default function Overlay({ containerRef }: { containerRef: RefObject<HTML
           className="absolute inset-0 flex flex-col items-end justify-center px-8 md:px-[10%] text-right"
         >
           <h2 className="text-5xl md:text-7xl font-bold text-white leading-tight drop-shadow-xl max-w-3xl">
-            Mastering DevOps <br/> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400">automation</span>.
+            Optimizing ETL pipelines <br/> & <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-400">cloud warehouses</span>.
           </h2>
         </motion.div>
 
