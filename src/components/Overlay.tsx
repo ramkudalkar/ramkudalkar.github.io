@@ -35,7 +35,7 @@ export default function Overlay({ containerRef }: { containerRef: RefObject<HTML
               Ramchandra<br />Kudalkar.
             </h1>
             <p className="text-xl md:text-3xl text-neutral-300 font-medium tracking-wide">
-              Data Engineer.
+              Data Engineer | Python | PySpark | SQL | Snowflake
             </p>
           </div>
         </motion.div>
